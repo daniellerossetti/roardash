@@ -11,6 +11,7 @@ class GameScene: SKScene {
     
     // setting player to lion icon
     let player = SKSpriteNode(imageNamed: "lion_icon")
+    let user = SKSpriteNode(imageNamed: "user_icon")
     
     func random() -> CGFloat {
         return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
@@ -28,6 +29,12 @@ class GameScene: SKScene {
         player.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
         // Making lion appear
         addChild(player)
+        
+        // Making user appear on screen
+        // Set position
+        user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.9)
+        // Making lion appear
+        addChild(user)
         
         // Animating lion
         // Determine where to spawn the player along the Y axis
