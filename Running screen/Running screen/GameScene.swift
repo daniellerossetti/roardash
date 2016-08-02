@@ -20,6 +20,13 @@ class GameScene: SKScene {
         // making lion appear 
         addChild(player)
     }
+    
+    func moveIcon() {
+        let actualDuration = 2
+        let actionMove = SKAction.moveTo(CGPoint(x: size.width * 0.5, y: size.height * 0.3), duration: NSTimeInterval(actualDuration))
+        let actionMoveDone = SKAction.removeFromParent()
+        player.runAction(SKAction.sequence([actionMove, actionMoveDone]))
+    }
 }
 
 //import SpriteKit
