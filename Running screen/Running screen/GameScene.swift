@@ -40,7 +40,7 @@ class GameScene: SKScene {
         addChild(user)
         
         let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
-        backgroundImage.image = UIImage(named: "red-black-gradient.jpg")
+        backgroundImage.image = UIImage(named: "red-black-gradient.png")
         self.view!.insertSubview(backgroundImage, atIndex: 0)
         
         // Animating lion
