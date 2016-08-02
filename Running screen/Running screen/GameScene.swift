@@ -12,19 +12,36 @@ class GameScene: SKScene {
     // setting player to lion icon
     let player = SKSpriteNode(imageNamed: "lion_icon")
     
-    override func didMoveToView(view: SKView) {
-        // setting background color
-        backgroundColor = SKColor.whiteColor()
-        // setting initial position of lion
-        player.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
-        // making lion appear 
-        addChild(player)
+    func random() -> CGFloat {
+        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
     }
     
-    func moveIcon() {
-        let actualDuration = 2
-        let actionMove = SKAction.moveTo(CGPoint(x: size.width * 0.5, y: size.height * 0.3), duration: NSTimeInterval(actualDuration))
-        let actionMoveDone = SKAction.removeFromParent()
+    func random(min min: CGFloat, max: CGFloat) -> CGFloat {
+        return random() * (max - min) + min
+    }
+    
+    override func didMoveToView(view: SKView) {
+        // Making lion appear on screen
+        // Setting background color
+        backgroundColor = SKColor.whiteColor()
+        // Setting initial position of lion
+        player.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        // Making lion appear
+        addChild(player)
+        
+        // Animating lion
+        // Determine where to spawn the player along the Y axis
+        let constantX = size.width * 0.5
+        let minY = CGFloat(0.0)
+        let maxY = size.height/2
+        //let constantX = random(min: player.size.width/2, max: size.width - player.size.width/2)
+        // Position the player slightly off-screen along the right edge, and along a random position along the Y axis as calculated above
+        player.position = CGPoint(x: constantX, y: minY)
+        // Determine speed of the player
+        let actualDuration = random(min: CGFloat(2.0), max: CGFloat(4.0))
+        // Create the actions
+        let actionMove = SKAction.moveTo(CGPoint(x: constantX, y: maxY), duration: NSTimeInterval(actualDuration))
+        let actionMoveDone = SKAction.unhide()
         player.runAction(SKAction.sequence([actionMove, actionMoveDone]))
     }
 }
