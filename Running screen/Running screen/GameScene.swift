@@ -22,19 +22,12 @@ class GameScene: SKScene {
 //        return random() * (max - min) + min
 //    }
     
-     func viewDidLoad() {
-        let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
-        backgroundImage.image = UIImage(named: "red-black-gradient.jpg")
-        //self.view.insertSubview(backgroundImage, atIndex: 0)
-    }
     //Main animation
     override func didMoveToView(view: SKView) {
         
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named:"red-black-gradient.jpg"))
         
         // Making lion appear on screen
-        // Setting background color
-        backgroundColor = SKColor.whiteColor()
         // Setting initial position of lion
         lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
         // Making lion appear
@@ -46,14 +39,16 @@ class GameScene: SKScene {
         // Making user appear
         addChild(user)
         
-        //viewDidLoad()
+        let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
+        backgroundImage.image = UIImage(named: "red-black-gradient.jpg")
+        self.view!.insertSubview(backgroundImage, atIndex: 0)
         
         // Animating lion
         // Setting constant x
         let constantX = size.width * 0.5
         //Setting boundaries for Y position
         let minY = CGFloat(0.0)
-        let maxY = size.height/2
+        let maxY = size.height * 0.5
         
         // Position the lion at the bottom of the screen
         lion.position = CGPoint(x: constantX, y: minY)
@@ -61,7 +56,7 @@ class GameScene: SKScene {
         let actualDuration = CGFloat(3.0)
         // Move the lion
         let actionMove = SKAction.moveTo(CGPoint(x: constantX, y: maxY), duration: NSTimeInterval(actualDuration))
-        let actionMoveDone = SKAction.unhide()
-        lion.runAction(SKAction.sequence([actionMove, actionMoveDone]))
+        //let actionMoveDone = SKAction.unhide()
+        lion.runAction(SKAction.sequence([actionMove]))
     }
 }
