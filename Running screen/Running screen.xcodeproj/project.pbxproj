@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C4061D50E14300928292 /* AppDelegate.swift */; };
-		CC60C4091D50E14300928292 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4081D50E14300928292 /* GameScene.sks */; };
 		CC60C40B1D50E14300928292 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40A1D50E14300928292 /* GameScene.swift */; };
 		CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40C1D50E14300928292 /* GameViewController.swift */; };
 		CC60C4101D50E14300928292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC60C40E1D50E14300928292 /* Main.storyboard */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		CC60C4031D50E14300928292 /* Running screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C4061D50E14300928292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC60C4081D50E14300928292 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CC60C40A1D50E14300928292 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CC60C40C1D50E14300928292 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CC60C40F1D50E14300928292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				CC60C4061D50E14300928292 /* AppDelegate.swift */,
-				CC60C4081D50E14300928292 /* GameScene.sks */,
 				CC60C40A1D50E14300928292 /* GameScene.swift */,
 				CC60C40C1D50E14300928292 /* GameViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
@@ -245,7 +242,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC60C43A1D50E33600928292 /* Sounds in Resources */,
-				CC60C4091D50E14300928292 /* GameScene.sks in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CC60C4121D50E14300928292 /* Assets.xcassets in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
@@ -506,6 +502,7 @@
 				CC60C4311D50E14300928292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC60C4321D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screenTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +511,7 @@
 				CC60C4341D50E14300928292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC60C4351D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screenUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +520,7 @@
 				CC60C4371D50E14300928292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

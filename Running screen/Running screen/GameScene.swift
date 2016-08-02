@@ -9,15 +9,15 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    // 1
+    // setting player to lion icon
     let player = SKSpriteNode(imageNamed: "lion_icon")
     
     override func didMoveToView(view: SKView) {
-        // 2
+        // setting background color
         backgroundColor = SKColor.whiteColor()
-        // 3
+        // setting initial position of lion
         player.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
-        // 4
+        // making lion appear 
         addChild(player)
     }
 }
