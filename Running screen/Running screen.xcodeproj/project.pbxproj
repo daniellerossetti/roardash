@@ -16,6 +16,9 @@
 		CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4131D50E14300928292 /* LaunchScreen.storyboard */; };
 		CC60C4201D50E14300928292 /* Running_screenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C41F1D50E14300928292 /* Running_screenTests.swift */; };
 		CC60C42B1D50E14300928292 /* Running_screenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C42A1D50E14300928292 /* Running_screenUITests.swift */; };
+		CC60C43A1D50E33600928292 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4381D50E33600928292 /* Sounds */; };
+		CC60C43B1D50E33600928292 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4391D50E33600928292 /* sprites.atlas */; };
+		CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC60C43E1D50E3F200928292 /* lion_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		CC60C4261D50E14300928292 /* Running screenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Running screenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C42A1D50E14300928292 /* Running_screenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running_screenUITests.swift; sourceTree = "<group>"; };
 		CC60C42C1D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC60C4381D50E33600928292 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		CC60C4391D50E33600928292 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				CC60C4111D50E14300928292 /* Assets.xcassets */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
+				CC60C43E1D50E3F200928292 /* lion_icon.png */,
+				CC60C4381D50E33600928292 /* Sounds */,
+				CC60C4391D50E33600928292 /* sprites.atlas */,
 			);
 			path = "Running screen";
 			sourceTree = "<group>";
@@ -235,9 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC60C43A1D50E33600928292 /* Sounds in Resources */,
 				CC60C4091D50E14300928292 /* GameScene.sks in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CC60C4121D50E14300928292 /* Assets.xcassets in Resources */,
+				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
+				CC60C43B1D50E33600928292 /* sprites.atlas in Resources */,
 				CC60C4101D50E14300928292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
