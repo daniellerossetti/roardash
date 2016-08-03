@@ -15,6 +15,7 @@ class SWViewController: UIViewController {
     
     // Stores time that start button is pressed
     var startTime = NSTimeInterval()
+    var totalElapsedTime: NSTimeInterval = 0;
     var timer:NSTimer = NSTimer()
 
     override func viewDidLoad() {
@@ -27,7 +28,7 @@ class SWViewController: UIViewController {
         if (!timer.valid) {
             let aSelector : Selector = #selector(SWViewController.updateTime)
             // Parameters for timer
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: aSelector, userInfo: nil, repeats: true)
             startTime = NSDate.timeIntervalSinceReferenceDate()
         }
         
@@ -44,13 +45,22 @@ class SWViewController: UIViewController {
     }
     
     func updateTime() {
-        // Time at which timer updates
-        let currentTime = NSDate.timeIntervalSinceReferenceDate()
+//        // Time at which timer updates
+//        let currentTime = NSDate.timeIntervalSinceReferenceDate()
+//        
+//        // Find the difference between current time and start time.
+//        let elapsedTime: NSTimeInterval = currentTime - startTime
+//        
+//        totalElapsedTime += elapsedTime
+//
+//        let formatter = NSDateFormatter()
+//        formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+//        formatter.dateFormat = "mm:ss"
+//
+//        let date = NSDate(timeIntervalSinceReferenceDate: totalElapsedTime)
+//        displayTimeLabel.text = formatter.stringFromDate(date)
         
-        // Find the difference between current time and start time.
-        var elapsedTime: NSTimeInterval = currentTime - startTime
-        
-        // Calculate the minutes in elapsed time.
+         Calculate the minutes in elapsed time.
         let minutes = UInt8(elapsedTime / 60.0)
         elapsedTime -= (NSTimeInterval(minutes) * 60)
         

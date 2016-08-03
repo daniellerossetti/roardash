@@ -14,6 +14,11 @@
 		CCB777F71D5247BA003C6EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB777F51D5247BA003C6EB8 /* LaunchScreen.storyboard */; };
 		CCB778021D5247BA003C6EB8 /* Start_Button_TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB778011D5247BA003C6EB8 /* Start_Button_TesterTests.swift */; };
 		CCB7780D1D5247BB003C6EB8 /* Start_Button_TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7780C1D5247BB003C6EB8 /* Start_Button_TesterUITests.swift */; };
+		CCB7789D1D528467003C6EB8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7789C1D528467003C6EB8 /* GameViewController.swift */; };
+		CCB7789F1D528493003C6EB8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7789E1D528493003C6EB8 /* GameScene.swift */; };
+		CCB778A21D5284E8003C6EB8 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB778A01D5284E8003C6EB8 /* lion_icon.png */; };
+		CCB778A31D5284E8003C6EB8 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB778A11D5284E8003C6EB8 /* user_icon.png */; };
+		CCB778A51D52864B003C6EB8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CCB778A41D52864B003C6EB8 /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		CCB778081D5247BB003C6EB8 /* Start Button TesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Start Button TesterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB7780C1D5247BB003C6EB8 /* Start_Button_TesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start_Button_TesterUITests.swift; sourceTree = "<group>"; };
 		CCB7780E1D5247BB003C6EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB7789C1D528467003C6EB8 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CCB7789E1D528493003C6EB8 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CCB778A01D5284E8003C6EB8 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
+		CCB778A11D5284E8003C6EB8 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+		CCB778A41D52864B003C6EB8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			children = (
 				CCB777EC1D5247BA003C6EB8 /* AppDelegate.swift */,
 				CCB777EE1D5247BA003C6EB8 /* ViewController.swift */,
+				CCB778A41D52864B003C6EB8 /* GameScene.sks */,
+				CCB7789C1D528467003C6EB8 /* GameViewController.swift */,
+				CCB7789E1D528493003C6EB8 /* GameScene.swift */,
 				CCB777F01D5247BA003C6EB8 /* Main.storyboard */,
 				CCB777F31D5247BA003C6EB8 /* Assets.xcassets */,
 				CCB777F51D5247BA003C6EB8 /* LaunchScreen.storyboard */,
 				CCB777F81D5247BA003C6EB8 /* Info.plist */,
+				CCB778A01D5284E8003C6EB8 /* lion_icon.png */,
+				CCB778A11D5284E8003C6EB8 /* user_icon.png */,
 			);
 			path = "Start Button Tester";
 			sourceTree = "<group>";
@@ -231,7 +246,10 @@
 			files = (
 				CCB777F71D5247BA003C6EB8 /* LaunchScreen.storyboard in Resources */,
 				CCB777F41D5247BA003C6EB8 /* Assets.xcassets in Resources */,
+				CCB778A21D5284E8003C6EB8 /* lion_icon.png in Resources */,
 				CCB777F21D5247BA003C6EB8 /* Main.storyboard in Resources */,
+				CCB778A51D52864B003C6EB8 /* GameScene.sks in Resources */,
+				CCB778A31D5284E8003C6EB8 /* user_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCB777EF1D5247BA003C6EB8 /* ViewController.swift in Sources */,
+				CCB7789D1D528467003C6EB8 /* GameViewController.swift in Sources */,
+				CCB7789F1D528493003C6EB8 /* GameScene.swift in Sources */,
 				CCB777ED1D5247BA003C6EB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +504,7 @@
 				CCB778131D5247BB003C6EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCB778141D5247BB003C6EB8 /* Build configuration list for PBXNativeTarget "Start Button TesterTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				CCB778161D5247BB003C6EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCB778171D5247BB003C6EB8 /* Build configuration list for PBXNativeTarget "Start Button TesterUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				CCB778191D5247BB003C6EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
