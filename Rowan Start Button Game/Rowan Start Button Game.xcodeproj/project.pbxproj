@@ -16,6 +16,9 @@
 		CCB778351D525D41003C6EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB778331D525D41003C6EB8 /* LaunchScreen.storyboard */; };
 		CCB778401D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7783F1D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift */; };
 		CCB7784B1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7784A1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift */; };
+		CCB778971D52619D003C6EB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB778961D52619D003C6EB8 /* ViewController.swift */; };
+		CCB7789A1D5268E0003C6EB8 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB778981D5268E0003C6EB8 /* lion_icon.png */; };
+		CCB7789B1D5268E0003C6EB8 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB778991D5268E0003C6EB8 /* user_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		CCB778461D525D42003C6EB8 /* Rowan Start Button GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rowan Start Button GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB7784A1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rowan_Start_Button_GameUITests.swift; sourceTree = "<group>"; };
 		CCB7784C1D525D42003C6EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB778961D52619D003C6EB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCB778981D5268E0003C6EB8 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
+		CCB778991D5268E0003C6EB8 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +112,12 @@
 				CCB7782A1D525D41003C6EB8 /* GameScene.swift */,
 				CCB7782C1D525D41003C6EB8 /* GameViewController.swift */,
 				CCB7782E1D525D41003C6EB8 /* Main.storyboard */,
+				CCB778961D52619D003C6EB8 /* ViewController.swift */,
 				CCB778311D525D41003C6EB8 /* Assets.xcassets */,
 				CCB778331D525D41003C6EB8 /* LaunchScreen.storyboard */,
 				CCB778361D525D41003C6EB8 /* Info.plist */,
+				CCB778981D5268E0003C6EB8 /* lion_icon.png */,
+				CCB778991D5268E0003C6EB8 /* user_icon.png */,
 			);
 			path = "Rowan Start Button Game";
 			sourceTree = "<group>";
@@ -238,7 +247,9 @@
 				CCB778291D525D41003C6EB8 /* GameScene.sks in Resources */,
 				CCB778351D525D41003C6EB8 /* LaunchScreen.storyboard in Resources */,
 				CCB778321D525D41003C6EB8 /* Assets.xcassets in Resources */,
+				CCB7789B1D5268E0003C6EB8 /* user_icon.png in Resources */,
 				CCB778301D525D41003C6EB8 /* Main.storyboard in Resources */,
+				CCB7789A1D5268E0003C6EB8 /* lion_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +276,7 @@
 			files = (
 				CCB7782B1D525D41003C6EB8 /* GameScene.swift in Sources */,
 				CCB7782D1D525D41003C6EB8 /* GameViewController.swift in Sources */,
+				CCB778971D52619D003C6EB8 /* ViewController.swift in Sources */,
 				CCB778271D525D41003C6EB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

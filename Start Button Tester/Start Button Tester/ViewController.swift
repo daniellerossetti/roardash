@@ -20,11 +20,8 @@ class ViewController: UIViewController {
     
     
     print("The button was clicked")
+    
         
-    
-    
-    
-    
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
