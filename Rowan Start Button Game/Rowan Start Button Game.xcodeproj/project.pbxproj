@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCB778271D525D41003C6EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB778261D525D41003C6EB8 /* AppDelegate.swift */; };
+		CCB778291D525D41003C6EB8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CCB778281D525D41003C6EB8 /* GameScene.sks */; };
+		CCB7782B1D525D41003C6EB8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7782A1D525D41003C6EB8 /* GameScene.swift */; };
+		CCB7782D1D525D41003C6EB8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7782C1D525D41003C6EB8 /* GameViewController.swift */; };
+		CCB778301D525D41003C6EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB7782E1D525D41003C6EB8 /* Main.storyboard */; };
+		CCB778321D525D41003C6EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB778311D525D41003C6EB8 /* Assets.xcassets */; };
+		CCB778351D525D41003C6EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB778331D525D41003C6EB8 /* LaunchScreen.storyboard */; };
+		CCB778401D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7783F1D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift */; };
+		CCB7784B1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7784A1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift */; };
+		CCB778971D52619D003C6EB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB778961D52619D003C6EB8 /* ViewController.swift */; };
+		CCB7789A1D5268E0003C6EB8 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB778981D5268E0003C6EB8 /* lion_icon.png */; };
+		CCB7789B1D5268E0003C6EB8 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB778991D5268E0003C6EB8 /* user_icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCB7783C1D525D42003C6EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCB7781B1D525D41003C6EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCB778221D525D41003C6EB8;
+			remoteInfo = "Rowan Start Button Game";
+		};
+		CCB778471D525D42003C6EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCB7781B1D525D41003C6EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCB778221D525D41003C6EB8;
+			remoteInfo = "Rowan Start Button Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCB778231D525D41003C6EB8 /* Rowan Start Button Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rowan Start Button Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB778261D525D41003C6EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCB778281D525D41003C6EB8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CCB7782A1D525D41003C6EB8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CCB7782C1D525D41003C6EB8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CCB7782F1D525D41003C6EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCB778311D525D41003C6EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCB778341D525D41003C6EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCB778361D525D41003C6EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB7783B1D525D42003C6EB8 /* Rowan Start Button GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rowan Start Button GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB7783F1D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rowan_Start_Button_GameTests.swift; sourceTree = "<group>"; };
+		CCB778411D525D42003C6EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB778461D525D42003C6EB8 /* Rowan Start Button GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rowan Start Button GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB7784A1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rowan_Start_Button_GameUITests.swift; sourceTree = "<group>"; };
+		CCB7784C1D525D42003C6EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB778961D52619D003C6EB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCB778981D5268E0003C6EB8 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
+		CCB778991D5268E0003C6EB8 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCB778201D525D41003C6EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB778381D525D42003C6EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB778431D525D42003C6EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCB7781A1D525D41003C6EB8 = {
+			isa = PBXGroup;
+			children = (
+				CCB778251D525D41003C6EB8 /* Rowan Start Button Game */,
+				CCB7783E1D525D42003C6EB8 /* Rowan Start Button GameTests */,
+				CCB778491D525D42003C6EB8 /* Rowan Start Button GameUITests */,
+				CCB778241D525D41003C6EB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCB778241D525D41003C6EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCB778231D525D41003C6EB8 /* Rowan Start Button Game.app */,
+				CCB7783B1D525D42003C6EB8 /* Rowan Start Button GameTests.xctest */,
+				CCB778461D525D42003C6EB8 /* Rowan Start Button GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCB778251D525D41003C6EB8 /* Rowan Start Button Game */ = {
+			isa = PBXGroup;
+			children = (
+				CCB778261D525D41003C6EB8 /* AppDelegate.swift */,
+				CCB778281D525D41003C6EB8 /* GameScene.sks */,
+				CCB7782A1D525D41003C6EB8 /* GameScene.swift */,
+				CCB7782C1D525D41003C6EB8 /* GameViewController.swift */,
+				CCB7782E1D525D41003C6EB8 /* Main.storyboard */,
+				CCB778961D52619D003C6EB8 /* ViewController.swift */,
+				CCB778311D525D41003C6EB8 /* Assets.xcassets */,
+				CCB778331D525D41003C6EB8 /* LaunchScreen.storyboard */,
+				CCB778361D525D41003C6EB8 /* Info.plist */,
+				CCB778981D5268E0003C6EB8 /* lion_icon.png */,
+				CCB778991D5268E0003C6EB8 /* user_icon.png */,
+			);
+			path = "Rowan Start Button Game";
+			sourceTree = "<group>";
+		};
+		CCB7783E1D525D42003C6EB8 /* Rowan Start Button GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7783F1D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift */,
+				CCB778411D525D42003C6EB8 /* Info.plist */,
+			);
+			path = "Rowan Start Button GameTests";
+			sourceTree = "<group>";
+		};
+		CCB778491D525D42003C6EB8 /* Rowan Start Button GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB7784A1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift */,
+				CCB7784C1D525D42003C6EB8 /* Info.plist */,
+			);
+			path = "Rowan Start Button GameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCB778221D525D41003C6EB8 /* Rowan Start Button Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB7784F1D525D42003C6EB8 /* Build configuration list for PBXNativeTarget "Rowan Start Button Game" */;
+			buildPhases = (
+				CCB7781F1D525D41003C6EB8 /* Sources */,
+				CCB778201D525D41003C6EB8 /* Frameworks */,
+				CCB778211D525D41003C6EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rowan Start Button Game";
+			productName = "Rowan Start Button Game";
+			productReference = CCB778231D525D41003C6EB8 /* Rowan Start Button Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCB7783A1D525D42003C6EB8 /* Rowan Start Button GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB778521D525D42003C6EB8 /* Build configuration list for PBXNativeTarget "Rowan Start Button GameTests" */;
+			buildPhases = (
+				CCB778371D525D42003C6EB8 /* Sources */,
+				CCB778381D525D42003C6EB8 /* Frameworks */,
+				CCB778391D525D42003C6EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCB7783D1D525D42003C6EB8 /* PBXTargetDependency */,
+			);
+			name = "Rowan Start Button GameTests";
+			productName = "Rowan Start Button GameTests";
+			productReference = CCB7783B1D525D42003C6EB8 /* Rowan Start Button GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCB778451D525D42003C6EB8 /* Rowan Start Button GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB778551D525D42003C6EB8 /* Build configuration list for PBXNativeTarget "Rowan Start Button GameUITests" */;
+			buildPhases = (
+				CCB778421D525D42003C6EB8 /* Sources */,
+				CCB778431D525D42003C6EB8 /* Frameworks */,
+				CCB778441D525D42003C6EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCB778481D525D42003C6EB8 /* PBXTargetDependency */,
+			);
+			name = "Rowan Start Button GameUITests";
+			productName = "Rowan Start Button GameUITests";
+			productReference = CCB778461D525D42003C6EB8 /* Rowan Start Button GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCB7781B1D525D41003C6EB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Girls Who Code";
+				TargetAttributes = {
+					CCB778221D525D41003C6EB8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CCB7783A1D525D42003C6EB8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CCB778221D525D41003C6EB8;
+					};
+					CCB778451D525D42003C6EB8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CCB778221D525D41003C6EB8;
+					};
+				};
+			};
+			buildConfigurationList = CCB7781E1D525D41003C6EB8 /* Build configuration list for PBXProject "Rowan Start Button Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCB7781A1D525D41003C6EB8;
+			productRefGroup = CCB778241D525D41003C6EB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCB778221D525D41003C6EB8 /* Rowan Start Button Game */,
+				CCB7783A1D525D42003C6EB8 /* Rowan Start Button GameTests */,
+				CCB778451D525D42003C6EB8 /* Rowan Start Button GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCB778211D525D41003C6EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB778291D525D41003C6EB8 /* GameScene.sks in Resources */,
+				CCB778351D525D41003C6EB8 /* LaunchScreen.storyboard in Resources */,
+				CCB778321D525D41003C6EB8 /* Assets.xcassets in Resources */,
+				CCB7789B1D5268E0003C6EB8 /* user_icon.png in Resources */,
+				CCB778301D525D41003C6EB8 /* Main.storyboard in Resources */,
+				CCB7789A1D5268E0003C6EB8 /* lion_icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB778391D525D42003C6EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB778441D525D42003C6EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCB7781F1D525D41003C6EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB7782B1D525D41003C6EB8 /* GameScene.swift in Sources */,
+				CCB7782D1D525D41003C6EB8 /* GameViewController.swift in Sources */,
+				CCB778971D52619D003C6EB8 /* ViewController.swift in Sources */,
+				CCB778271D525D41003C6EB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB778371D525D42003C6EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB778401D525D42003C6EB8 /* Rowan_Start_Button_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB778421D525D42003C6EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB7784B1D525D42003C6EB8 /* Rowan_Start_Button_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCB7783D1D525D42003C6EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCB778221D525D41003C6EB8 /* Rowan Start Button Game */;
+			targetProxy = CCB7783C1D525D42003C6EB8 /* PBXContainerItemProxy */;
+		};
+		CCB778481D525D42003C6EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCB778221D525D41003C6EB8 /* Rowan Start Button Game */;
+			targetProxy = CCB778471D525D42003C6EB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCB7782E1D525D41003C6EB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB7782F1D525D41003C6EB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCB778331D525D41003C6EB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB778341D525D41003C6EB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCB7784D1D525D42003C6EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCB7784E1D525D42003C6EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCB778501D525D42003C6EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Rowan Start Button Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Rowan-Start-Button-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCB778511D525D42003C6EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Rowan Start Button Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Rowan-Start-Button-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCB778531D525D42003C6EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Rowan Start Button GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Rowan-Start-Button-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rowan Start Button Game.app/Rowan Start Button Game";
+			};
+			name = Debug;
+		};
+		CCB778541D525D42003C6EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Rowan Start Button GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Rowan-Start-Button-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rowan Start Button Game.app/Rowan Start Button Game";
+			};
+			name = Release;
+		};
+		CCB778561D525D42003C6EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Rowan Start Button GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Rowan-Start-Button-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Rowan Start Button Game";
+			};
+			name = Debug;
+		};
+		CCB778571D525D42003C6EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Rowan Start Button GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Rowan-Start-Button-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Rowan Start Button Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCB7781E1D525D41003C6EB8 /* Build configuration list for PBXProject "Rowan Start Button Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB7784D1D525D42003C6EB8 /* Debug */,
+				CCB7784E1D525D42003C6EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB7784F1D525D42003C6EB8 /* Build configuration list for PBXNativeTarget "Rowan Start Button Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB778501D525D42003C6EB8 /* Debug */,
+				CCB778511D525D42003C6EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCB778521D525D42003C6EB8 /* Build configuration list for PBXNativeTarget "Rowan Start Button GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB778531D525D42003C6EB8 /* Debug */,
+				CCB778541D525D42003C6EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCB778551D525D42003C6EB8 /* Build configuration list for PBXNativeTarget "Rowan Start Button GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB778561D525D42003C6EB8 /* Debug */,
+				CCB778571D525D42003C6EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCB7781B1D525D41003C6EB8 /* Project object */;
+}
