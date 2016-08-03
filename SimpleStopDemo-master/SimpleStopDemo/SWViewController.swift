@@ -13,7 +13,6 @@ class SWViewController: UIViewController {
     @IBOutlet var displayTimeLabel: UILabel!
     
     var startTime = NSTimeInterval()
-    
     var timer:NSTimer = NSTimer()
 
     override func viewDidLoad() {
@@ -28,6 +27,7 @@ class SWViewController: UIViewController {
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
             startTime = NSDate.timeIntervalSinceReferenceDate()
         }
+        
     }
     
     @IBAction func pause(sender: AnyObject) {
@@ -36,10 +36,11 @@ class SWViewController: UIViewController {
     
     @IBAction func stop(sender: AnyObject) {
         timer.invalidate()
+        
     }
     
     func updateTime() {
-        var currentTime = NSDate.timeIntervalSinceReferenceDate()
+        let currentTime = NSDate.timeIntervalSinceReferenceDate()
         
         //Find the difference between current time and start time.
         var elapsedTime: NSTimeInterval = currentTime - startTime
