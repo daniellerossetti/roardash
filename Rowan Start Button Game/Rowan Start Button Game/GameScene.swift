@@ -51,20 +51,18 @@ class GameScene: SKScene {
         // Making user appear
         addChild(user)
         
-        // Animating lion
-        // Setting constant x
-        let constantX = size.width * 0.5
-        //Setting boundaries for Y position
-        let minY = CGFloat(0.0)
-        let maxY = size.height * 0.5
-        
+        // Parameter for nimating lion
         // Position the lion at the bottom of the screen
-        lion.position = CGPoint(x: constantX, y: minY)
+        var lion_x = size.width * 0.5
+        var lion_y = CGFloat(0.0)
+        var delta_y = 500
+        lion.position = CGPoint(x: lion_x, y: lion_y)
+        
         // Determine speed of the lion
-        let actualDuration = CGFloat(3.0)
-        // Move the lion
-        let actionMove = SKAction.moveTo(CGPoint(x: constantX, y: maxY), duration: NSTimeInterval(actualDuration))
-        //let actionMoveDone = SKAction.unhide()
+        let actualDuration = CGFloat(5)
+        
+        // Animate the lion
+        let actionMove = SKAction.moveByX(CGFloat(0), y: CGFloat(delta_y), duration: NSTimeInterval(actualDuration))
         lion.runAction(SKAction.sequence([actionMove]))
         
         // Not sure what this does

@@ -14,15 +14,6 @@ class GameScene: SKScene {
     let lion = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "user_icon")
     
-    // Random positions & arcs (Kept if we need it in the future)
-//    func random() -> CGFloat {
-//        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
-//    }
-    
-//    func random(min min: CGFloat, max: CGFloat) -> CGFloat {
-//        return random() * (max - min) + min
-//    }
-    
     // Main animation displays automatically when app runs
     override func didMoveToView(view: SKView) {
         // Create, position, and start the timer when the game moves to view
