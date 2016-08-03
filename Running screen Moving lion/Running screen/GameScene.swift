@@ -32,8 +32,6 @@ class GameScene: SKScene {
         addChild(timer)
         timer.startWithDuration(20)
         
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named:"red-black-gradient.jpg"))
-        
         // Making lion appear on screen
         lion.position = CGPoint(x: size.width*0.5, y: size.height*0.0)
         // Making lion appear
@@ -45,36 +43,23 @@ class GameScene: SKScene {
         // Making user appear
         addChild(user)
         
-        // Animating lion
-        // Setting constant x
-        let constantX = size.width * 0.5
-        //Setting boundaries for Y position
-        let minY = CGFloat(0.0)
-        let maxY = size.height * 0.5
-        
+        // Parameter for nimating lion
         // Position the lion at the bottom of the screen
-        var lion_x = constantX
-        var lion_y = minY
+        var lion_x = size.width * 0.5
+        var lion_y = CGFloat(0.0)
         var delta_y = 500
         lion.position = CGPoint(x: lion_x, y: lion_y)
-//        while lion_y < maxY
-//        {
-//            lion_y+=1
-//            
-//            lion.position = CGPoint(x: lion_x, y: lion_y)
-//        }
+
         // Determine speed of the lion
         let actualDuration = CGFloat(5)
-//        // Move the lion
-//        let actionMove = SKAction.moveTo(CGPoint(x: constantX, y: maxY), duration: NSTimeInterval(actualDuration))
-//        //let actionMoveDone = SKAction.unhide()
-//        lion.runAction(SKAction.sequence([actionMove]))
+        
+        // Animate the lion
         let actionMove = SKAction.moveByX(CGFloat(0), y: CGFloat(delta_y), duration: NSTimeInterval(actualDuration))
         lion.runAction(SKAction.sequence([actionMove]))
         
+        // Ineffectual timer
         func update(currentTime: CFTimeInterval) {
             timer.update()
-            print("0")
         }
     }
 }
