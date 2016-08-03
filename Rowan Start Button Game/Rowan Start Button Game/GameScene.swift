@@ -29,6 +29,7 @@ class GameScene: SKScene {
     }
     
     // Runs when the screen is tapped anywhere
+    // The lion animation is contained within this function
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         // Remove the startButton
         startButton.runAction(SKAction.removeFromParent())
