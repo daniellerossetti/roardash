@@ -18,6 +18,7 @@
 		CC60C43A1D50E33600928292 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4381D50E33600928292 /* Sounds */; };
 		CC60C43B1D50E33600928292 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4391D50E33600928292 /* sprites.atlas */; };
 		CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC60C43E1D50E3F200928292 /* lion_icon.png */; };
+		CCC2ABC51D5246EB00740559 /* CountdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ABC41D5246EB00740559 /* CountdownLabel.swift */; };
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
 		CCEDF1A71D50F1A900A44CCD /* red-black-gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A61D50F1A900A44CCD /* red-black-gradient.jpg */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		CC60C4381D50E33600928292 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		CC60C4391D50E33600928292 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
+		CCC2ABC41D5246EB00740559 /* CountdownLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownLabel.swift; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 		CCEDF1A61D50F1A900A44CCD /* red-black-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-black-gradient.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 			children = (
 				CC60C4061D50E14300928292 /* AppDelegate.swift */,
 				CC60C40A1D50E14300928292 /* GameScene.swift */,
+				CCC2ABC41D5246EB00740559 /* CountdownLabel.swift */,
 				CC60C40C1D50E14300928292 /* GameViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
 				CC60C4111D50E14300928292 /* Assets.xcassets */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC2ABC51D5246EB00740559 /* CountdownLabel.swift in Sources */,
 				CC60C40B1D50E14300928292 /* GameScene.swift in Sources */,
 				CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */,
 				CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */,
