@@ -53,6 +53,7 @@
 		CCC2ABF61D5248BF00740559 /* Timer_Take_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_Take_2UITests.swift; sourceTree = "<group>"; };
 		CCC2ABF81D5248BF00740559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCC2AC041D5248D600740559 /* CountdownLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownLabel.swift; sourceTree = "<group>"; };
+		CCC2AC071D525AE700740559 /* CountdownLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				CCC2ABD21D5248BF00740559 /* AppDelegate.swift */,
 				CCC2ABD41D5248BF00740559 /* GameScene.sks */,
 				CCC2AC041D5248D600740559 /* CountdownLabel.swift */,
+				CCC2AC071D525AE700740559 /* CountdownLabel.h */,
 				CCC2ABD61D5248BF00740559 /* GameScene.swift */,
 				CCC2ABD81D5248BF00740559 /* GameViewController.swift */,
 				CCC2ABDA1D5248BF00740559 /* Main.storyboard */,
