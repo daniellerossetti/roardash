@@ -22,7 +22,7 @@ class GameScene: SKScene {
 //        return random() * (max - min) + min
 //    }
     
-    //Main animation
+    // Main animation displays automatically when app runs
     override func didMoveToView(view: SKView) {
         
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named:"red-black-gradient.jpg"))
@@ -38,13 +38,6 @@ class GameScene: SKScene {
         user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.9)
         // Making user appear
         addChild(user)
-        
-//        let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
-//        backgroundImage.image = UIImage(named: "red-black-gradient.jpg")
-//        self.view!.insertSubview(backgroundImage, atIndex: 0)
-//        let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
-//        backgroundImage.image = UIImage(named: "red-black-gradient.png")
-//        self.view!.insertSubview(backgroundImage, atIndex: 0)
         
         // Animating lion
         // Setting constant x
