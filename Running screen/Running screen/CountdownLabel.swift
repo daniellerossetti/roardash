@@ -17,7 +17,8 @@ class CountdownLabel: SKLabelNode {
         text = String(timeLeftInteger)
     }
     func startWithDuration(duration: NSTimeInterval) {
-        var endTime = timeNow.dateByAddingTimeInterval(duration)
+        let timeNow = NSDate();
+        endTime = timeNow.dateByAddingTimeInterval(duration)
     }
     func hasFinished() -> Bool {
         return timeLeft() == 0;

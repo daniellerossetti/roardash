@@ -59,6 +59,7 @@
 		CC60C4391D50E33600928292 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
 		CCC2ABC41D5246EB00740559 /* CountdownLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownLabel.swift; sourceTree = "<group>"; };
+		CCC2AC081D525B9900740559 /* CountdownLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownLabel.h; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 		CCEDF1A61D50F1A900A44CCD /* red-black-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-black-gradient.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +115,7 @@
 				CC60C4061D50E14300928292 /* AppDelegate.swift */,
 				CC60C40A1D50E14300928292 /* GameScene.swift */,
 				CCC2ABC41D5246EB00740559 /* CountdownLabel.swift */,
+				CCC2AC081D525B9900740559 /* CountdownLabel.h */,
 				CC60C40C1D50E14300928292 /* GameViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
 				CC60C4111D50E14300928292 /* Assets.xcassets */,
