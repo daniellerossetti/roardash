@@ -1,3 +1,4 @@
+
 //
 //  GameScene.swift
 //  Rowan Start Button Game
@@ -6,6 +7,8 @@
 //  Copyright (c) 2016 Girls Who Code. All rights reserved.
 //
 
+// This file opens a screen with a start button
+// The user can click anywhere and the text will hide and the running screen will show up
 import SpriteKit
 
 class GameScene: SKScene {
@@ -19,8 +22,11 @@ class GameScene: SKScene {
     // Automatically show startButton when screen moves to view
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        // Not working for some reason
+        self.view!.backgroundColor = UIColor.blackColor()
+
         // Parameters to determine visual display
-        startButton.text = "Start"
+        startButton.text = "Touch anywhere to start"
         startButton.position = CGPoint(x: size.width * 0.5, y: size.height * 0.3)
 
         // Make the startButton show up
@@ -29,7 +35,6 @@ class GameScene: SKScene {
     }
     
     // Runs when the screen is tapped anywhere
-    // The lion animation is contained within this function
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         // Remove the startButton
         startButton.runAction(SKAction.removeFromParent())
