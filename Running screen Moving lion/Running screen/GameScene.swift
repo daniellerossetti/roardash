@@ -55,19 +55,22 @@ class GameScene: SKScene {
         // Position the lion at the bottom of the screen
         var lion_x = constantX
         var lion_y = minY
+        var delta_y = 500
         lion.position = CGPoint(x: lion_x, y: lion_y)
-        while lion_y < maxY
-        {
-            lion_y+=1
-            
-            lion.position = CGPoint(x: lion_x, y: lion_y)
-        }
+//        while lion_y < maxY
+//        {
+//            lion_y+=1
+//            
+//            lion.position = CGPoint(x: lion_x, y: lion_y)
+//        }
         // Determine speed of the lion
-        let actualDuration = CGFloat(3.0)
+        let actualDuration = CGFloat(5)
 //        // Move the lion
 //        let actionMove = SKAction.moveTo(CGPoint(x: constantX, y: maxY), duration: NSTimeInterval(actualDuration))
 //        //let actionMoveDone = SKAction.unhide()
 //        lion.runAction(SKAction.sequence([actionMove]))
+        let actionMove = SKAction.moveByX(CGFloat(0), y: CGFloat(delta_y), duration: NSTimeInterval(actualDuration))
+        lion.runAction(SKAction.sequence([actionMove]))
         
         func update(currentTime: CFTimeInterval) {
             timer.update()
