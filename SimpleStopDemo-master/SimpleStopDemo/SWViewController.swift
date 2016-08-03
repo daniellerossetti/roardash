@@ -30,6 +30,10 @@ class SWViewController: UIViewController {
         }
     }
     
+    @IBAction func pause(sender: AnyObject) {
+        // Do something to pause app
+    }
+    
     @IBAction func stop(sender: AnyObject) {
         timer.invalidate()
     }

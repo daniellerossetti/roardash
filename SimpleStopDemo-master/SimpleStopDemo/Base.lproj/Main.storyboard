@@ -52,6 +52,12 @@
                                     <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sDP-Qk-aZE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5e-fE-JnP">
+                                <rect key="frame" x="274" y="557" width="42" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
