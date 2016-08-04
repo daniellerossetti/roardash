@@ -5,6 +5,8 @@
 //  Created by Girls Who Code on 8/2/16.
 //  Copyright (c) 2016 Girls Who Code. All rights reserved.
 //
+// Created Day 2 to animate lion icon. Displays the user icon at the top of the screen and the lion at the bottom; the lion moves to the center of the creen using the moveTo() function.
+
 import SpriteKit
 
 class GameScene: SKScene {
