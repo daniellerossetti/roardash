@@ -6,6 +6,7 @@
 //  Copyright (c) 2016 Girls Who Code. All rights reserved.
 //
 // Created Day 2 to animate lion icon. Displays the user icon at the top of the screen and the lion at the bottom; the lion moves to the center of the creen using the moveTo() function.
+// I updated it to use moveByX() so I believe it is now current
 
 import SpriteKit
 
@@ -28,20 +29,18 @@ class GameScene: SKScene {
         // Making user appear
         addChild(user)
         
-        // Animating lion
-        // Setting constant x
-        let constantX = size.width * 0.5
-        //Setting boundaries for Y position
-        let minY = CGFloat(0.0)
-        let maxY = size.height * 0.5
-        
+        // Parameter for animating lion
         // Position the lion at the bottom of the screen
-        lion.position = CGPoint(x: constantX, y: minY)
+        var lion_x = size.width * 0.5
+        var lion_y = CGFloat(0.0)
+        var delta_y = 500
+        lion.position = CGPoint(x: lion_x, y: lion_y)
+        
         // Determine speed of the lion
-        let actualDuration = CGFloat(3.0)
-        // Move the lion
-        let actionMove = SKAction.moveTo(CGPoint(x: constantX, y: maxY), duration: NSTimeInterval(actualDuration))
-        //let actionMoveDone = SKAction.unhide()
+        let actualDuration = CGFloat(5)
+        
+        // Animate the lion
+        let actionMove = SKAction.moveByX(CGFloat(0), y: CGFloat(delta_y), duration: NSTimeInterval(actualDuration))
         lion.runAction(SKAction.sequence([actionMove]))
     }
 }
