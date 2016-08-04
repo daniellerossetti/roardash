@@ -5,6 +5,7 @@
 //  Created by Ravi Shankar on 22/07/14.
 //  Copyright (c) 2014 Ravi Shankar. All rights reserved.
 //
+// This is a timer/stopwatch application as downloaded from the Internet. Please make a duplicate porject in order to make any changes. It has a start and a stop function. Pressing start after using the stop button clears the timer.
 
 import UIKit
 
