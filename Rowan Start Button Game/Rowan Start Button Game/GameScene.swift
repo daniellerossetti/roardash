@@ -9,6 +9,8 @@
 
 // This file opens a screen with a start button
 // The user can click anywhere and the text will hide and the running screen will show up
+// I coded this before we learned about how to use storyboard and it is now irrelevant
+
 import SpriteKit
 
 class GameScene: SKScene {
