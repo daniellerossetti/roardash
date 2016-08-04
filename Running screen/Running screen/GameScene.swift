@@ -10,35 +10,12 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    // Setup timer
-    let timer = CountdownLabel()
     // Creating lion & user
     let lion = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "user_icon")
     
-    // Random positions & arcs (Kept if we need it in the future)
-//    func random() -> CGFloat {
-//        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
-//    }
-    
-//    func random(min min: CGFloat, max: CGFloat) -> CGFloat {
-//        return random() * (max - min) + min
-//    }
-    
     // Main animation displays automatically when app runs
     override func didMoveToView(view: SKView) {
-        // Create, position, and start the timer when the game moves to view
-        let timerPosition = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame))
-        timer.position = timerPosition
-        timer.fontSize = 35;
-        addChild(timer)
-        timer.startWithDuration(20)
-        
-        func update(currentTime: CFTimeInterval) {
-            timer.update()
-        }
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named:"red-black-gradient.jpg"))
-        
         // Making lion appear on screen
         // Setting initial position of lion
         lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
