@@ -236,7 +236,7 @@
 				TargetAttributes = {
 					2CB31CF81C760FAC006D044B = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = RCJFFV5UHS;
+						DevelopmentTeam = 4M46MY9Q4P;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -454,7 +454,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OneHourWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gommmd.OneHourWalker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwc.OneHourWalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -469,7 +469,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OneHourWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gommmd.OneHourWalker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwc.OneHourWalker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
