@@ -208,6 +208,7 @@
 				TargetAttributes = {
 					CCB777E81D5247BA003C6EB8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H9C424GL3P;
 					};
 					CCB777FC1D5247BA003C6EB8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -421,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Start Button Tester/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Start-Button-Tester";
@@ -432,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Start Button Tester/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Start-Button-Tester";
