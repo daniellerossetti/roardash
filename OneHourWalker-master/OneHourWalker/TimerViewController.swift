@@ -9,7 +9,6 @@
 
 import UIKit
 import CoreLocation
-//import HealthKit
 
 class TimerViewController: UIViewController, CLLocationManagerDelegate {
     // References that can be reset, or mutable variables (I know I'm gettin gthe terminology wrong)
@@ -29,9 +28,6 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
     // Give variables starting files when start is called
     var distanceTraveled = 0.0
     var timerStartDate: NSDate!
-    
-//    let healthManager:HealthKitManager = HealthKitManager()
-//    var height: HKQuantitySample?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,23 +53,6 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
 
     }
-    
-//    func getHealthKitPermission() {
-//        
-//        // Seek authorization in HealthKitManager.swift.
-//        healthManager.authorizeHealthKit { (authorized,  error) -> Void in
-//            if authorized {
-//                
-//                // Get and set the user's height.
-//                self.setHeight()
-//            } else {
-//                if error != nil {
-//                    print(error)
-//                }
-//                print("Permission denied.")
-//            }
-//        }
-//    }
     
     // When start button is tapped do these actions
     @IBAction func startTimer(sender: AnyObject) {
@@ -154,40 +133,5 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         // Update the lastLocation value for next time loop runs
         lastLocation = currentLocation
     }
-    
-//    func setHeight() {
-//        // Create the HKSample for Height.
-//        let heightSample = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)
-//        
-//        // Call HealthKitManager's getSample() method to get the user's height.
-//        self.healthManager.getHeight(heightSample!, completion: { (userHeight, error) -> Void in
-//            
-//            if( error != nil ) {
-//                print("Error: \(error.localizedDescription)")
-//                return
-//            }
-//            
-//            var heightString = ""
-//            
-//            self.height = userHeight as? HKQuantitySample
-//            
-//            // The height is formatted to the user's locale.
-//            if let meters = self.height?.quantity.doubleValueForUnit(HKUnit.meterUnit()) {
-//                let formatHeight = NSLengthFormatter()
-//                formatHeight.forPersonHeightUse = true
-//                heightString = formatHeight.stringFromMeters(meters)
-//            }
-//            
-//            // Set the label to reflect the user's height.
-//            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//                self.heightLabel.text = heightString
-//            })
-//        })
-//        
-//    }
-//    
-//    @IBAction func share(sender: AnyObject) {
-//        healthManager.saveDistance(distanceTraveled, date: NSDate())
-//    }
-//
+
 }
