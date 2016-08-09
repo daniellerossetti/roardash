@@ -19,7 +19,6 @@
 		CC60C43B1D50E33600928292 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4391D50E33600928292 /* sprites.atlas */; };
 		CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC60C43E1D50E3F200928292 /* lion_icon.png */; };
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
-		CCEDF1A71D50F1A900A44CCD /* red-black-gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A61D50F1A900A44CCD /* red-black-gradient.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		CC60C4391D50E33600928292 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
-		CCEDF1A61D50F1A900A44CCD /* red-black-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-black-gradient.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 				CC60C4161D50E14300928292 /* Info.plist */,
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
-				CCEDF1A61D50F1A900A44CCD /* red-black-gradient.jpg */,
 				CC60C4381D50E33600928292 /* Sounds */,
 				CC60C4391D50E33600928292 /* sprites.atlas */,
 			);
@@ -252,7 +249,6 @@
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CC60C4121D50E14300928292 /* Assets.xcassets in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
-				CCEDF1A71D50F1A900A44CCD /* red-black-gradient.jpg in Resources */,
 				CC60C43B1D50E33600928292 /* sprites.atlas in Resources */,
 				CC60C4101D50E14300928292 /* Main.storyboard in Resources */,
 			);

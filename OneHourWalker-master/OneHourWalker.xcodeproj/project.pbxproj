@@ -18,7 +18,6 @@
 		2CB31D3A1C762204006D044B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB31D391C762204006D044B /* CustomButton.swift */; };
 		2CB31D3C1C77637D006D044B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB31D3B1C77637D006D044B /* CoreLocation.framework */; };
 		2CB31D3E1C77C5D8006D044B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB31D3D1C77C5D8006D044B /* HealthKit.framework */; };
-		2CB31D411C77C63A006D044B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB31D401C77C63A006D044B /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		2CB31D3B1C77637D006D044B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2CB31D3D1C77C5D8006D044B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		2CB31D3F1C77C5D8006D044B /* OneHourWalker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OneHourWalker.entitlements; sourceTree = "<group>"; };
-		2CB31D401C77C63A006D044B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				2CB31D3F1C77C5D8006D044B /* OneHourWalker.entitlements */,
-				2CB31D2A1C761092006D044B /* Manager */,
 				2CB31D2D1C7610C2006D044B /* Controller */,
 				2CB31D2C1C7610B9006D044B /* View */,
 				2CB31CFC1C760FAD006D044B /* AppDelegate.swift */,
@@ -141,14 +138,6 @@
 				2CB31D1E1C760FAD006D044B /* Info.plist */,
 			);
 			path = OneHourWalkerUITests;
-			sourceTree = "<group>";
-		};
-		2CB31D2A1C761092006D044B /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				2CB31D401C77C63A006D044B /* HealthKitManager.swift */,
-			);
-			name = Manager;
 			sourceTree = "<group>";
 		};
 		2CB31D2C1C7610B9006D044B /* View */ = {
@@ -306,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB31CFD1C760FAD006D044B /* AppDelegate.swift in Sources */,
-				2CB31D411C77C63A006D044B /* HealthKitManager.swift in Sources */,
 				2CB31D381C761905006D044B /* CustomView.swift in Sources */,
 				2CB31D3A1C762204006D044B /* CustomButton.swift in Sources */,
 				2CB31D361C7611A8006D044B /* TimerViewController.swift in Sources */,
@@ -454,7 +442,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OneHourWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gwc.OneHourWalker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwc.OneHourWalker20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -469,7 +457,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OneHourWalker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gwc.OneHourWalker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gwc.OneHourWalker20;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

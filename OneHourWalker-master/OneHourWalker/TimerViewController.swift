@@ -5,19 +5,16 @@
 //  Created by Matthew Maher on 2/18/16.
 //  Copyright © 2016 Matt Maher. All rights reserved.
 //
-// This file has time, distance, and sharing capabilities. The share and height features that use HealthKit have been diabled. When run on the computer, it simulates a person walking at a constant pace. Pressing go after stop has been used clears the timer (no pause).
-// I am in the process of working out how to add a pace value but it isn't working yet.
+// This file has time, distance, and pace capabilities. When run on the computer, it simulates a person walking at an almost constant pace. Pressing go after stop has been used clears the timer (no pause).
 
 import UIKit
 import CoreLocation
 
 class TimerViewController: UIViewController, CLLocationManagerDelegate {
-    // References that can be reset, or mutable variables (I know I'm gettin gthe terminology wrong)
+    // References that can be reset, or mutable variables (I know I'm getting the terminology wrong)
     // Sets up the text to display for time and distance
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var milesLabel: UILabel!
-    @IBOutlet weak var heightLabel: UILabel!
-    @IBOutlet weak var paceLabel: UILabel!
     
     // zeroTime is a time interval that will be set to the time at which start is pressed. The timer is declared here
     var zeroTime = NSTimeInterval()
@@ -30,14 +27,14 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
     // Give variables starting values when start is called
     var distanceTraveled = 0.0
     var timerStartDate: NSDate!
-//    // Declare master pace variable
-//    // When we include this part then Build Fails
-//    var pacePerMile: CGFloat
+    // Declare master pace variable
+    // When we include this part then Build Fails
+    //var pacePerMile: CGFloat
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Pop-up request for user to allow locatin services
+    // Pop-up request for user to allow locatin services
         locationManager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled(){
@@ -98,27 +95,7 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         
         // Display the components (min, sec, millisec) as a stopwatch
         timerLabel.text = "\(strMinutes):\(strSeconds):\(strMSX10)"
-        
-        // Call the pace function
-        func updatePace() {
-            // Use d=rt and variable values from outer function updateTime
-            var currentPace = distanceTraveled / (currentTime - zeroTime)
-            print(currentPace)
-            
-            // Convert using same method as time
-            let minutesPace = CGFloat(currentPace / 60.0)
-            currentPace -= Double(minutesPace * 60)
-            let secondsPace = CGFloat(currentPace)
-            
-            // Format the values
-            let strMinutesPace = String(format: "%02d", minutesPace)
-            let strSecondsPace = String(format: "%02d", secondsPace)
-            
-            // Display the components in pace field
-            paceLabel.text = "\(strMinutesPace):\(strSecondsPace) Min/Mi"
-            
-        }
-        updatePace()
+
         
         // Kill the timer if it runs over the maximum value
         if timerLabel.text == "60:00:00" {
@@ -129,7 +106,6 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("locations: \(locations)")
-        
         let currentLocation = locations.last!
         
         if currentLocation.timestamp.compare(timerStartDate) == NSComparisonResult.OrderedAscending  {
@@ -146,11 +122,12 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
             let lastDistance = lastLocation.distanceFromLocation(currentLocation)
             distanceTraveled += lastDistance * 0.000621371
             
-            //        Why format: "%.2f" and trimmedDistance?
             let trimmedDistance = String(format: "%.2f", distanceTraveled)
             
             // Display the distance travelled
             milesLabel.text = "\(trimmedDistance) Miles"
+           let lastPace = 1/(lastDistance*0.0372823)
+            print(lastPace)
         }
         
         // Update the lastLocation value for next time loop runs
